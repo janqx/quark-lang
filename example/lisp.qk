@@ -1,0 +1,18 @@
+os = import("os")
+
+TYPE_BOOL = 0
+TYPE_INT = 1
+TYPE_FLOAT = 2
+TYPE_STRING = 3
+TYPE_CONS = 4
+
+fn parse(source) {
+}
+
+fn eval() {
+  
+}
+
+fn main() {
+  source = os.readFile()
+}

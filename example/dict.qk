@@ -1,0 +1,13 @@
+map = {}
+
+map = {
+  name: "janqx",
+  age: 22,
+  sex: "man",
+  hobby: ["movie", "music", "game", "food"],
+  func: fn() {}
+}
+
+print(map.name)
+print(map.hobby[0])
+print(map)

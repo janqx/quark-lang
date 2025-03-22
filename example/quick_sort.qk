@@ -1,0 +1,27 @@
+
+fn swap(list, i, j) {
+  list[i], list[j] = list[j], list[i]
+}
+
+fn quickSort(list, left, right) {
+  if left >= right {
+    return
+  }
+  i, j, pivot = left, right, left
+  for i < j {
+    for i < j && list[j] >= list[pivot] {
+      j = j - 1
+    }
+    for i < j && list[i] <= list[pivot] {
+      i = i + 1
+    }
+    swap(list, i, j)
+  }
+  swap(list, i, pivot)
+  quickSort(list, left, i - 1)
+  quickSort(list, i + 1, right)
+}
+
+list = [3, 5, 1, 7, 9, 2, 6, 4]
+quickSort(list, 0, length(list) - 1)
+println(list)

@@ -1,0 +1,38 @@
+fn outer(count) {
+  return (fn() {
+    return (fn() {
+      return (fn() {
+        return (fn() {
+          return (fn() {
+            return (fn() {
+              return (fn() {
+                return (fn() {
+                  return (fn() {
+                    count = count + 1
+                    return count
+                  })
+                })()
+              })()
+            })()
+          })()
+        })()
+      })()
+    })()
+  })()
+}
+
+fn1 = outer(1)
+fn2 = outer(2)
+fn3 = outer(3)
+
+println(fn1())
+println(fn2())
+println(fn3())
+
+println(fn1())
+println(fn2())
+println(fn3())
+
+println(fn1())
+println(fn2())
+println(fn3())

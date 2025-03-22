@@ -1,0 +1,9 @@
+if n = 4; n == 1 {
+  print('branch1')
+} else if n == 2 {
+  print('branch2')
+} else if n == 3 {
+  print('branch3')
+} else {
+  print('branch else')
+}

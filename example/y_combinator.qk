@@ -1,0 +1,18 @@
+
+fn Y(f) {
+  return (fn(g) {
+    return g(g)
+  })(fn(g) {
+    return f(fn(x) {
+      return g(g)(x)
+    })
+  })
+}
+
+fn fib(g) {
+  return (fn (n) {
+    return n < 3 ? 1 : g(n-1) + g(n-2)
+  })
+}
+
+print(Y(fib)(10))

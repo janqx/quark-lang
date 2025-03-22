@@ -1,0 +1,19 @@
+func Animal(name, age, sex) {
+  self = {
+    name: name,
+    age: age,
+    sex: sex
+  }
+  
+  self.sleep = func() {
+    print(self.name + ' is sleeping...')
+  }
+
+  return self
+}
+
+a = Animal('tom', 18, 1)
+a.sleep()
+
+b = Animal('jack', 21, 1)
+b.sleep()

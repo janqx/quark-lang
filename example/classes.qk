@@ -1,0 +1,22 @@
+class Shape {
+  fn new(self, x, y) {
+    self.x = x
+    self.y = y
+  }
+}
+
+class Cricle : Shape {
+  fn new(self, x, y, radius) {
+    super.new(x, y)
+    self.radius = radius
+  }
+
+  fn typename() {
+    println('Cricle')
+  }
+}
+
+cricle1 = new Cricle(10, 20, 5)
+
+
+Cricle.typename()
